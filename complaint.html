@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>complaint page</title>
+ <link rel="stylesheet" href="complaint.css">
+ <script src="complaint.js" defer></script>
+<head>
+<body>
+ <centre><h2>Complaint Form</h2></centre>
+ <p>Please send us details about the incident you would like to report. Our Complaint Center will analyze your
+  complaint and take the appropriate measures in order that the reported situation will not occur at any other
+  time in the future.</p>
+ <hr />
+ <centre>
+ <form id="form">
+  <div class="input-group">
+   <label>Name:</label><br>
+   <input type="text" placeholder="Enter first name" required id="fir"><br/><br/>
+   <input type="text" placeholder="Enter last name" id="las"><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Email:</label><br>
+   <input type="email" required id="email" placeholder="Enter email address"><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label> District:</label><br>
+   <select id="dis">
+    <option value="" disabled selected>District</option>
+    <option>Ariyalur</option>
+    <option>Chengalpattu</option>
+    <option>Chennai</option>
+    <option>Coimabatore</option>
+    <option>Cuddalore</option>
+    <option>Dharmapuri</option>
+    <option>Dindugul</option>
+    <option>Erode</option>
+    <option>kallakurichi</option>
+    <option>Kancheepuram</option>
+    <option>Karur</option>
+    <option>Krishnagiri</option>
+    <option>Madurai</option>
+    <option>Mayiladuthurai</option>
+    <option>Nagapattinam</option>
+    <option>Kanniyakumari</option>
+    <option>Namakkal</option>
+    <option>Perambalur</option>
+    <option>Pudukottai</option>
+    <option>Ramanadhapuram</option>
+    <option>Ranipet</option>
+    <option>Salem</option>
+    <option>Sivagangai</option>
+    <option>Tenkasi</option>
+    <option>Thanjavur</option>
+    <option>Theni</option>
+    <option>Thiruvallur</option>
+    <option>Thiruvarur</option>
+    <option>Thoothukudi</option>
+    <option>Trichirapalli</option>
+    <option>Thirunelveli</option>
+    <option>Tirupathur</option>
+    <option>Tiruppur</option>
+    <option>Tiruvannamalai</option>
+    <option>Nilgiris</option>
+    <option>Vellore</option>
+    <option>Villupuram</option>
+    <option>Virudhunagar</option>
+   </select><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Pin code:</label><br>
+   <input type="text" placeholder="Pin code" required id="zip"><br><br>
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Date of the reported incident:</label><br>
+   <input type="date" required id="dor"><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Incident location:</label><br>
+   <textarea id="incloc" name="incloc" rows="4" cols="10"></textarea><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Complaint title:</label><br>
+   <input type="text" required id="comtit" placeholder="complaint title"><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Complaint description:</label><br>
+   <textarea id="comdet" name="Comdet" rows="4" cols="10"></textarea><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Severity:</label><br>
+   <textarea id="sev" name="sev" rows="4" cols="10"></textarea><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Upload image:</label><br>
+   <input type="file" accept=".jpg,.png" required id="img"><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Upload audio:</label><br>
+   <input type="file" accept=".mp3" class="file"><br /><br />
+   <div class="error"></div>
+  </div>
+  <div class="input-group">
+   <label>Desired outcome:</label><br>
+   <textarea id="desout" name="desout" rows="4" cols="10"></textarea><br /><br />
+   <div class="error"></div>
+  </div>
+  <p class="sug">Suggest the steps that should be taken to avoid a repeat of the problem.</p><br />
+  <div class="input-group">
+   <label>Signature:</label><br>
+   <input type="file" accept=".jpg,.png" class="fil">
+   <div class="error"></div>
+  </div>
+  <p>Before signing declare that all information you entered is truthful and accurate.</p>
+  <button type="submit">SEND COMPLAINT</button>
+ </form>
+ </centre>
+</body>
+</html>
